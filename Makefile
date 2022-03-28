@@ -1,5 +1,5 @@
-# Copyright (c) F-Secure Corporation
-# https://foundry.f-secure.com
+# Copyright (c) WithSecure Corporation
+# https://foundry.withsecure.com
 #
 # Use of this source code is governed by the license
 # that can be found in the LICENSE file.
@@ -35,7 +35,7 @@ install: check_dest $(APP).bin
 
 check_tamago:
 	@if [ "${TAMAGO}" == "" ] || [ ! -f "${TAMAGO}" ]; then \
-		echo 'You need to set the TAMAGO variable to a compiled version of https://github.com/f-secure-foundry/tamago-go'; \
+		echo 'You need to set the TAMAGO variable to a compiled version of https://github.com/usbarmory/tamago-go'; \
 		exit 1; \
 	fi
 

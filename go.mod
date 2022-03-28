@@ -1,5 +1,5 @@
-module github.com/f-secure-foundry/tamago-example-pizero
+module github.com/usbarmory/tamago-example-pizero
 
-go 1.16
+go 1.18
 
-require github.com/f-secure-foundry/tamago v0.0.0-20210601073428-3d51445fa773
+require github.com/usbarmory/tamago v0.0.0-20220317131509-7fbcfbeb1abb

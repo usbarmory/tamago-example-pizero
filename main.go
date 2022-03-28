@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"time"
 
-	pi "github.com/f-secure-foundry/tamago/board/raspberrypi"
-	"github.com/f-secure-foundry/tamago/board/raspberrypi/pizero"
+	pi "github.com/usbarmory/tamago/board/raspberrypi"
+	"github.com/usbarmory/tamago/board/raspberrypi/pizero"
 )
 
 func rng() {
