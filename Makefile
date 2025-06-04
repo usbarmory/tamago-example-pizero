@@ -1,6 +1,3 @@
-# Copyright (c) WithSecure Corporation
-# https://foundry.withsecure.com
-#
 # Use of this source code is governed by the license
 # that can be found in the LICENSE file.
 
@@ -11,10 +8,10 @@ BUILD = ${BUILD_USER}@${BUILD_HOST} on ${BUILD_DATE}
 REV = $(shell git rev-parse --short HEAD 2> /dev/null)
 
 APP := example-pi-zero
-GOENV := GO_EXTLINK_ENABLED=0 CGO_ENABLED=0 GOOS=tamago GOARM=5 GOARCH=arm
+GOENV := GOOS=tamago GOARM=5 GOARCH=arm
 TEXT_START := 0x00110000 # Space for interrupt vector, etc
 
-GOFLAGS := -ldflags "-s -w -T $(TEXT_START) -E _rt0_arm_tamago -R 0x1000 -X 'main.Build=${BUILD}' -X 'main.Revision=${REV}'"
+GOFLAGS := -ldflags "-s -w -T $(TEXT_START) -R 0x1000 -X 'main.Build=${BUILD}' -X 'main.Revision=${REV}'"
 
 SHELL = /bin/bash
 JOBS=2
